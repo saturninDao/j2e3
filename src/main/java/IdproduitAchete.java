@@ -17,10 +17,10 @@ import javax.persistence.Embeddable;
 @Embeddable
 public class IdproduitAchete implements Serializable {
     
-    @Column(name="id_produit", nullable=false)
+    @Column(name="id_produit", nullable=false, insertable = false, updatable = false)
     Long idProduit;
     
-    @Column(name="id_achat", nullable=false)
+    @Column(name="id_achat", nullable=false, insertable = false, updatable = false)
     Long idAchat;
 
     public IdproduitAchete() {
